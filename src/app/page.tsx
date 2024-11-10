@@ -28,10 +28,10 @@ export default function Homepage() {
               Sip into Nature
             </h1>
             <p className="text-xl mb-8">
-              Experience coffee that&apos;s good for you and the planet
+              Experience drinks and food that are good for you and the planet.
             </p>
             <Button size="lg" className="bg-green-700 hover:bg-green-800">
-              Explore Our Brews
+              Explore Our Offerings
             </Button>
           </div>
         </section>
@@ -43,9 +43,9 @@ export default function Homepage() {
             </h2>
             <p className="max-w-2xl mx-auto text-lg">
               We&apos;re committed to delivering the finest, sustainably sourced
-              coffee that connects people with the Earth. Every cup is a
-              testament to our dedication to quality and environmental
-              stewardship.
+              beverages and wholesome food that connect people with the Earth.
+              Every sip and bite is a testament to our dedication to quality,
+              health, and environmental stewardship.
             </p>
           </div>
         </section>
@@ -59,7 +59,7 @@ export default function Homepage() {
               {/* Product 1 */}
               <Card className="bg-white">
                 <Image
-                  src="/images/19.png?height=300&width=300"
+                  src="/images/1.png?height=300&width=300"
                   alt="Coffee Product 1"
                   width={300}
                   height={300}
@@ -67,13 +67,14 @@ export default function Homepage() {
                 />
                 <CardContent className="p-4">
                   <h3 className="text-xl font-semibold mb-2">
-                    Mountain Mist Blend
+                    Peppermint Herbal Tea
                   </h3>
                   <p className="text-sm text-stone-600 mb-4">
-                    A smooth, balanced coffee with hints of chocolate and
-                    marshmallows.
+                    A refreshing herbal tea with soothing peppermint, perfect
+                    for relaxation.
                   </p>
-                  <p className="font-bold">₱75.00</p>
+                  <br />
+                  <p className="font-bold">₱60.00</p>
                 </CardContent>
                 <CardFooter className="p-4 pt-0">
                   <Button className="w-full bg-green-700 hover:bg-green-800">
@@ -85,18 +86,21 @@ export default function Homepage() {
               {/* Product 2 */}
               <Card className="bg-white">
                 <Image
-                  src="/images/10.png?height=300&width=300"
+                  src="/images/8.png?height=300&width=300"
                   alt="Coffee Product 2"
                   width={300}
                   height={300}
                   className="w-full h-48 object-cover"
                 />
                 <CardContent className="p-4">
-                  <h3 className="text-xl font-semibold mb-2">Holy Roast</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Golden Milk Latte
+                  </h3>
                   <p className="text-sm text-stone-600 mb-4">
-                    A strong punch of pure coffee to wake you in the morning.
+                    A warm, spiced latte made with turmeric and ginger, offering
+                    a comforting and health-boosting experience.
                   </p>
-                  <p className="font-bold">₱50.00</p>
+                  <p className="font-bold">₱140.00</p>
                 </CardContent>
                 <CardFooter className="p-4 pt-0">
                   <Button className="w-full bg-green-700 hover:bg-green-800">
@@ -115,12 +119,12 @@ export default function Homepage() {
                   className="w-full h-48 object-cover"
                 />
                 <CardContent className="p-4">
-                  <h3 className="text-xl font-semibold mb-2">Dawn Of Heaven</h3>
+                  <h3 className="text-xl font-semibold mb-2">Vegan Sandwich</h3>
                   <p className="text-sm text-stone-600 mb-4">
-                    A bold and rich coffe with white chocolate and cinammon
-                    flavors.
+                    A hearty sandwich packed with fresh veggies and plant-based
+                    protein on artisanal bread.
                   </p>
-                  <p className="font-bold">₱60.00</p>
+                  <p className="font-bold">₱130.00</p>
                 </CardContent>
                 <CardFooter className="p-4 pt-0">
                   <Button className="w-full bg-green-700 hover:bg-green-800">
@@ -132,18 +136,19 @@ export default function Homepage() {
               {/* Product 4 */}
               <Card className="bg-white">
                 <Image
-                  src="/images/20.png?height=300&width=300"
+                  src="/images/18.png?height=300&width=300"
                   alt="Coffee Product 4"
                   width={300}
                   height={300}
                   className="w-full h-48 object-cover"
                 />
                 <CardContent className="p-4">
-                  <h3 className="text-xl font-semibold mb-2">IceCream Yummy</h3>
+                  <h3 className="text-xl font-semibold mb-2">Acai Bowl</h3>
                   <p className="text-sm text-stone-600 mb-4">
-                    A smooth creamy coffee with cold icecream finish.
+                    A vibrant bowl of blended acai topped with fresh fruits,
+                    granola, and seeds for a nutritious boost.
                   </p>
-                  <p className="font-bold">₱80.00</p>
+                  <p className="font-bold">₱130.00</p>
                 </CardContent>
                 <CardFooter className="p-4 pt-0">
                   <Button className="w-full bg-green-700 hover:bg-green-800">
@@ -161,15 +166,15 @@ export default function Homepage() {
               Our Commitment to Sustainability
             </h2>
             <p className="max-w-2xl mx-auto text-lg mb-8">
-              At Earthy Vibes Coffee, we believe in nurturing both our customers
-              and the planet. From bean to cup, we ensure every step of our
-              process is environmentally responsible.
+              At Earthy Vibes, we believe in nurturing both our customers and
+              the planet. From farm to table, we ensure every step of our
+              process is environmentally responsible and sustainable.
             </p>
             <Link
               href="/sustainability"
               className="text-green-700 hover:underline"
             >
-              Learn more about our eco-friendly practices
+              Learn more about our eco-friendly practices.
             </Link>
           </div>
         </section>
@@ -181,12 +186,13 @@ export default function Homepage() {
             </h2>
             <div className="max-w-4xl mx-auto">
               <blockquote className="italic text-center text-lg">
-                &quot;Earthy Vibes Coffee not only tastes amazing but also makes
-                me feel good about my purchase. Knowing that I&apos;m supporting
-                sustainable practices with every sip is truly satisfying.&quot;
+                &quot;Earthy Vibes not only offers amazing drinks and meals but
+                also makes me feel great knowing that I&apos;m supporting
+                sustainable practices. Every time I enjoy their offerings, I
+                feel connected to the Earth.&quot;
               </blockquote>
               <p className="text-center mt-4 font-semibold">
-                - Ron A., Coffee Enthusiast
+                - Ron A., Health & Sustainability Advocate
               </p>
             </div>
           </div>
