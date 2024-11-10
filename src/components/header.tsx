@@ -17,7 +17,9 @@ export function Header() {
             alt="Earthy Vibes Coffee Logo"
             width={40}
             height={40}
+            className="rounded-full mx-auto"
           />
+
           <span className="text-xl font-semibold">Earthy Vibes Coffee</span>
         </Link>
         <nav className="hidden md:flex space-x-6">
