@@ -62,9 +62,9 @@ export function Header() {
           <Link href="/sustainability" className="hover:text-green-700">
             Sustainability
           </Link>
-          <Link href="/contact" className="hover:text-green-700">
+          {/* <Link href="/contact" className="hover:text-green-700">
             Contact
-          </Link>
+          </Link> */}
         </nav>
       )}
     </header>
