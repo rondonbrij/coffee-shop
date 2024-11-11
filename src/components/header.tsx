@@ -13,7 +13,7 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/images/logo.jfif"
+            src="/images/logo.png"
             alt="Earthy Vibes Cafe Logo"
             width={40}
             height={40}
