@@ -55,7 +55,7 @@ export default function AboutPage() {
             {/* Team Member 1 */}
             <div className="text-center">
               <Image
-                src="/images/default.jpg"
+                src="/images/pfp-job.png"
                 alt="Jobert"
                 width={200}
                 height={200}
@@ -84,7 +84,7 @@ export default function AboutPage() {
             {/* Team Member 2 */}
             <div className="text-center">
               <Image
-                src="/images/default.jpg"
+                src="/images/pfp-ken.png"
                 alt="Kenny"
                 width={200}
                 height={200}
@@ -113,7 +113,7 @@ export default function AboutPage() {
             {/* Team Member 3 */}
             <div className="text-center">
               <Image
-                src="/images/default.jpg"
+                src="/images/pfp-han.png"
                 alt="Hannah"
                 width={200}
                 height={200}
@@ -140,7 +140,7 @@ export default function AboutPage() {
             {/* Team Member 4 */}
             <div className="text-center">
               <Image
-                src="/images/default.jpg"
+                src="/images/pfp-jem.png"
                 alt="Jemelyn"
                 width={200}
                 height={200}
