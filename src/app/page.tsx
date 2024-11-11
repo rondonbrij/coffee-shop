@@ -1,24 +1,60 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-// import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-// import {
-//   ShoppingCart,
-//   Search,
-//   Instagram,
-//   Facebook,
-//   Twitter,
-// } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+const faqs = [
+  {
+    question: "How fresh are your drinks and food items?",
+    answer:
+      "We prepare our herbal teas, smoothies, and other beverages fresh daily. All items are crafted with high-quality ingredients, ensuring every drink and dish is as fresh and flavourful as possible.",
+  },
+  {
+    question: "What type of ingredients do you use?",
+    answer:
+      "Our offerings include organic and locally sourced ingredients whenever possible. From fresh fruits in our smoothies to premium teas and organic greens in our salads, we are committed to quality and sustainability.",
+  },
+  {
+    question: "Do you offer gluten-free or vegan options?",
+    answer:
+      "Yes! We have a range of gluten-free and vegan-friendly options, including gluten-free pastries, vegan sandwiches, energy bowls, and vegan ice cream. We aim to cater to diverse dietary needs and preferences.",
+  },
+  {
+    question: "Can I customize my order?",
+    answer:
+      "Absolutely! Many of our menu items can be customized to suit your tastes. For instance, you can add toppings to your acai bowls or request adjustments to your energy bowls and salads. Just let us know your preferences!",
+  },
+  {
+    question: "Do you offer seasonal or limited-time items?",
+    answer:
+      "We occasionally introduce seasonal items or special blends, particularly for holidays and local festivals. Keep an eye on our menu for limited-time offerings featuring seasonal fruits or unique flavor combinations.",
+  },
+  {
+    question: "Are your packaging and practices environmentally friendly?",
+    answer:
+      "We strive to be eco-conscious by using biodegradable and recyclable packaging wherever possible. Sustainability is important to us, and we continue to seek ways to reduce our environmental footprint.",
+  },
+  // {
+  //   question: "How do I contact customer support?",
+  //   answer:
+  //     "You can reach us through the Contact Us page on our website or by emailing our support team directly. We’re here to help with any questions, concerns, or special requests!",
+  // },
+];
 
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-stone-50 text-stone-800">
       <main>
-        <section className="relative h-[70vh] flex items-center justify-center">
+        <section className="relative h-[90vh] flex items-center justify-center">
           <Image
-            src="/images/single.jpg?height=1080&width=1920"
-            alt="Coffee beans"
+            src="/images/banner.png?height=1080&width=1920"
+            alt="Cafe"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 z-0"
@@ -27,7 +63,7 @@ export default function Homepage() {
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Sip into Nature
             </h1>
-            <p className="text-xl mb-8">
+            <p className="text-xl mb-8 mx-8">
               Experience drinks and food that are good for you and the planet.
             </p>
             <Button size="lg" className="bg-green-700 hover:bg-green-800">
@@ -39,7 +75,7 @@ export default function Homepage() {
         <section className="py-16 px-6 md:px-10">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-semibold mb-6">
-              Welcome to Earthy Vibes Coffee
+              Welcome to Earthy Vibes Cafe
             </h2>
             <p className="max-w-2xl mx-auto text-lg">
               We&apos;re committed to delivering the finest, sustainably sourced
@@ -60,7 +96,7 @@ export default function Homepage() {
               <Card className="bg-white">
                 <Image
                   src="/images/1.png?height=300&width=300"
-                  alt="Coffee Product 1"
+                  alt="Cafe Product 1"
                   width={300}
                   height={300}
                   className="w-full h-48 object-cover"
@@ -87,7 +123,7 @@ export default function Homepage() {
               <Card className="bg-white">
                 <Image
                   src="/images/8.png?height=300&width=300"
-                  alt="Coffee Product 2"
+                  alt="Cafe Product 2"
                   width={300}
                   height={300}
                   className="w-full h-48 object-cover"
@@ -113,7 +149,7 @@ export default function Homepage() {
               <Card className="bg-white">
                 <Image
                   src="/images/11.png?height=300&width=300"
-                  alt="Coffee Product 3"
+                  alt="Cafe Product 3"
                   width={300}
                   height={300}
                   className="w-full h-48 object-cover"
@@ -137,7 +173,7 @@ export default function Homepage() {
               <Card className="bg-white">
                 <Image
                   src="/images/18.png?height=300&width=300"
-                  alt="Coffee Product 4"
+                  alt="Cafe Product 4"
                   width={300}
                   height={300}
                   className="w-full h-48 object-cover"
@@ -195,6 +231,26 @@ export default function Homepage() {
                 - Ron A., Health & Sustainability Advocate
               </p>
             </div>
+          </div>
+        </section>
+
+        <section className="py-12 px-6 md:px-10">
+          <div className="container">
+            <h2 className="text-2xl font-bold text-center mb-8">
+              Frequently Asked Questions
+            </h2>
+            <Accordion type="single" collapsible className="w-full mx-auto">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger className="text-lg font-semibold">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </section>
       </main>

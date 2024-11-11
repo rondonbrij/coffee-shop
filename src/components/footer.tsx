@@ -11,17 +11,17 @@ export function Footer() {
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li>
-              <Link href="/privacy-policy" className="hover:text-green-400">
+              <Link href="/#" className="hover:text-green-400">
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link href="/terms-of-service" className="hover:text-green-400">
+              <Link href="/#" className="hover:text-green-400">
                 Terms of Service
               </Link>
             </li>
             <li>
-              <Link href="/faq" className="hover:text-green-400">
+              <Link href="/#" className="hover:text-green-400">
                 FAQ
               </Link>
             </li>
@@ -31,7 +31,7 @@ export function Footer() {
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <p>Santa Monica</p>
           <p>Puerto Princesa City, Palawan</p>
-          <p>ronjames6213@gmail.com</p>
+          <p>earthyvibescafe@gmail.com</p>
         </div>
         <div>
           <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
@@ -66,7 +66,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mt-8 text-center text-sm">
-        © 2024 Earthy Vibes Coffee. All rights reserved.
+        © 2024 Earthy Vibes Cafe. All rights reserved.
       </div>
     </footer>
   );

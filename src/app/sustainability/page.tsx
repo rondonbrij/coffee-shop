@@ -28,7 +28,7 @@ export default function SustainabilityPage() {
             <div className="md:w-1/2">
               <Image
                 src="/images/land.jpg"
-                alt="Sustainable Coffee Farm"
+                alt="Sustainable Cafe Farm"
                 width={500}
                 height={300}
                 className="rounded-lg"

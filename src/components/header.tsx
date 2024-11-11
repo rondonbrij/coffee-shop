@@ -13,14 +13,14 @@ export function Header() {
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/images/18.png"
-            alt="Earthy Vibes Coffee Logo"
+            src="/images/logo.jfif"
+            alt="Earthy Vibes Cafe Logo"
             width={40}
             height={40}
             className="rounded-full mx-auto"
           />
 
-          <span className="text-xl font-semibold">Earthy Vibes Coffee</span>
+          <span className="text-xl font-semibold">Earthy Vibes Cafe</span>
         </Link>
         <nav className="hidden md:flex space-x-6">
           <Link href="/" className="hover:text-green-700">
