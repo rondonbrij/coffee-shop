@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingCart } from "lucide-react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,8 +19,9 @@ export function Header() {
             height={40}
             className="rounded-full mx-auto"
           />
-
-          <span className="text-xl font-semibold">Earthy Vibes Cafe</span>
+          <span className="text-xl font-semibold hidden md:inline">
+            Earthy Vibes Cafe
+          </span>
         </Link>
         <nav className="hidden md:flex space-x-6">
           <Link href="/" className="hover:text-green-700">
@@ -35,20 +36,25 @@ export function Header() {
           <Link href="/sustainability" className="hover:text-green-700">
             Sustainability
           </Link>
-          {/* <Link href="/contact" className="hover:text-green-700">
-            Contact
-          </Link> */}
+          <Link href="/orders" className="hover:text-green-700">
+            Orders
+          </Link>
         </nav>
-        <button
-          className="md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </button>
+        <div className="flex items-center space-x-4">
+          <Link href="/orders" className="md:hidden">
+            <ShoppingCart className="h-6 w-6" />
+          </Link>
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
+        </div>
       </div>
       {isMenuOpen && (
         <nav className="md:hidden mt-4 flex flex-col space-y-2">
@@ -64,9 +70,6 @@ export function Header() {
           <Link href="/sustainability" className="hover:text-green-700">
             Sustainability
           </Link>
-          {/* <Link href="/contact" className="hover:text-green-700">
-            Contact
-          </Link> */}
         </nav>
       )}
     </header>
